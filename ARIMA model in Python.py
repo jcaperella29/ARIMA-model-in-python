@@ -8,7 +8,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 # Suppressing scientific notation and reading in the data
 np.set_printoptions(suppress=True)
  
-StoreSalesData=pd.read_excel("C:/Users/ccape/Downloads/Super-Store-Sales-data.xls")
+StoreSalesData=pd.read_excel("  user path /Super-Store-Sales-data.xls")
 StoreSalesData.head()
 #examining the data
 StoreSalesData.info()
@@ -172,7 +172,7 @@ print("Next Six Month Forecast:\n",forecast[-FutureMonths:])
 
 forecast_df=pd.DataFrame(forecast[-FutureMonths:])
 forcast_df_with_months=forecast_df.assign(Months =MonthNames[0:FutureMonths])
-forcast_df_with_months.to_csv("C:/Users/ccape/Downloads/Time_series_results")
+forcast_df_with_months.to_csv(    user path /Time_series_results")
 
  
 # Plot the forecast values
